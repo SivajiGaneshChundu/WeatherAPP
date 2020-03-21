@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Weather Forecast</title>
+</head>
+<body>
+
+<div class="main_container">
+  
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                     
+        <a class="navbar-brand" href="#"> 
+          <img src="images/weather.jpeg" alt="" class="nav-img">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Temperature</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            
+            
+        
+        </div>
+            </div>
+          </nav>
+    
+       
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+           
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100 " src="images/plain.jpg" alt="First slide">
+                <div class="carousel-caption">
+
+                  <div id="accordion" class="panel-group">
+                    <div class="panel panel-primary">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a href="#panelBodyOne" class="panel-color" data-toggle="collapse" data-parent="accordion">
+                            <h1> WEATHER FORECAST BY CITY NAME </h1>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="panelBodyOne" class="panel-collapse collapse">
+                        <div class="sea">
+                          <form class="form-line">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Enter City" aria-label="Search">
+                            <button class="btn btn-light my-sm-0" type="submit">Search</button>
+                          </form>
+                        </div> 
+                      </div>
+                    </div>
+
+                    <div class="panel panel-primary">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a href="#panelBodyTwo" class="panel-color"  data-toggle="collapse" data-parent="accordion">
+                             WEATHER INFO
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="panelBodyTwo" class="panel-last panel-collapse collapse">
+                        <div class="weath">
+                          <ul class="weather"></ul>
+                        </div>
+                         
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+          </div>
+       
+
+     <section class="footer">
+         <div class="footer-col">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum aperiam dolor autem doloribus pariatur nihil? Quia, itaque.</div>
+         <div class="footer-col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quos accusamus. Quod deleniti distinctio voluptatum reiciendis dolorem?</div>
+         <div class="footer-col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sequi libero eos deserunt voluptas, ipsa eaque modi mollitia?</div>
+         <div class="footer-col">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, similique perferendis fuga minus quia vel magni. Iste, dolores voluptates?</div>
+     </section>
+
+</div>
+   
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
+
+<script src="script.js"></script>
+    
+</body>
+</html>
